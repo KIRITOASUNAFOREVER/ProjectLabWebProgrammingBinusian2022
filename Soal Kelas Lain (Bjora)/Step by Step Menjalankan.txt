@@ -2,5 +2,8 @@
 2. On browser, type localhost/phpmyadmin and enter.
 3. Create new database "bjora" (without quotes).
 4. Type "php artisan migrate:fresh --seed" (without quotes) in the text editor terminal.
+  4a) Jika ada error, di app/providers/AppServiceProvider.php, import "use Illuminate\Database\Schema\Builder;
+  4b) di bagian function boot(), tambahkan Builder::defaultStringLength(191);
+  4c) jalankan lagi migrate diatas
 5. Previous command will create you table and all dummy data in the seeder.
 6. Finally, type "php artisan serve" (without quotes).
