@@ -1,0 +1,6 @@
+1. Turn on Apache and MySQL.
+2. On browser, type localhost/phpmyadmin and enter.
+3. Create new database "bjora" (without quotes).
+4. Type "php artisan migrate:fresh --seed" (without quotes) in the text editor terminal.
+5. Previous command will create you table and all dummy data in the seeder.
+6. Finally, type "php artisan serve" (without quotes).
